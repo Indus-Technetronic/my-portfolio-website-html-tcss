@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+      xs: '360px',
+      sm: '480px',
+      md: '800px',
+      lg: '976px',
+      xl: '1440px',
+    },
+
+    colors: {
+      'darkblue': '#0d0d0d',
+      'liteblue': '#185ADB',
+      'gray': '#5D6471',
+    },
+    
+    fontFamily: {
+      FontA : ['Clash Display', 'sans-serif'],
+      FontB : ['Poppins', 'sans-serif'],
+      FontC : ['Inter', 'sans-serif'],
+    },
+    
+    BoxShadow: {
+      '2xl': 'rgba(24, 90, 219, 1)' ,
+      '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+      '4xl': [
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)'
+      ]
+    },
+
+    rotate: {
+      '90': '-90deg',
+    }
+          }
+        }
+      </script>
+
+    <title>Zaid Hussain - UI/UX Designer</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <body class="">
+
+        <nav class="mx-auto flex items-center justify-between xs:px-8 md:px-12 py-6">
+          <div class="font-FontA font-semibold text-2xl">
+            Zaid <span class="text-liteblue">UI</span> Dev
+            <span class="text-liteblue">.</span>
+          </div>
+      
+          <div class="font-FontB font-medium text-darkblue opacity-70 text-base space-x-4 md:flex hidden">
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              Home
+            </a>
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              About
+            </a>
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              Services
+            </a>
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              Experience
+            </a>
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              Projects
+            </a>
+            <a href="#" class="navbar-link hover:text-liteblue hover:opacity-100 hover:underline hover:transition-all hover:duration-600">
+              Contact
+            </a>
+          </div>
+      
+          <div class="md:hidden flex" onclick="toggleMenu()">
+            <img src="path/to/your/image.jpg" alt="" class="cursor-pointer">
+          </div>
+        </nav>
+
+
+
+        <!-- Hero - Section -->
+        <section class="lg:flex md:px-12 xs:px-4 justify-center items-center py-24">
+            <div class="heading text-6xl text-darkblue space-y-6">
+              <h2 class="font-FontA font-semibold xs:text-center md:text-left text-darkblue">
+                <span class="font-FontC font-medium text-4xl">Hi,<br /></span> I am <span class="text-liteblue underline">Zaid</span> Hussain
+              </h2>
+              <p class="font-FontC text-lg text-gray opacity-80 font-medium xs:text-center md:text-left">
+                A UI/UX Designer & Frontend Developer. Passionate to become a MERN
+                Stack Developer. Learning JavaScript, React JS & Next JS.
+              </p>
+      
+              <div class="xs:text-center md:text-left">
+                <button class="w-40 bg-liteblue text-lg text-[#fff] font-FontB font-medium py-2 rounded transform hover:scale-105 transition-transform duration-300">Hire Now</button>
+              </div>
+            </div>
+      
+            <div class="lg:pt-0 pt-16 items-center flex md:justify-end xs:justify-center ">
+              <img src="images/my-pfp.png" alt="My Profile Picture" class="w-3/4 shadow-2xl rounded-full transform hover:scale-105 transition-transform duration-300" />
+            </div>
+          </section>
+
+
+
+          <!-- Bottom Bar - Section -->
+          <div class="items-center justify-center flex xs:px-4">
+            <div class="inline-flex flex-wrap items-center justify-center bg-liteblue gap-6 px-6 py-6 rounded-lg border-liteblue border-2 border-opacity-30 bg-opacity-10">
+              <img src="images/figma-logo.png" alt="Figma" />
+              <img src="images/css-logo.png" alt="CSS" />
+              <img src="images/html-logo.png" alt="HTML" />
+              <img src="images/js-logo.png" alt="JavaScript" />
+              <img src="images/jsx-logo.png" alt="JSX" />
+              <img src="images/ps-logo.png" alt="Adobe Photoshop" />
+              <img src="images/tcss-logo.png" alt="Tailwind CSS" />
+              <img src="images/vs-logo.png" alt="Visual Studio Code" />
+              <img src="images/xd-logo.png" alt="Adobe XD" />
+              <img src="images/github-logo.png" alt="GitHub" />
+            </div>
+          </div>
+
+
+
+          <!-- About Me - Section -->
+          <div class="flex-wrap xs:px-4 md:px-24 xs:gap-12 lg:gap-16 py-36 flex items-center justify-between md:gap-28">
+
+            <div class="py-24 items-center flex gap-12">
+              <div>
+                <img src="images/AboutMe.svg" alt="" />
+              </div>
+        
+              <div class="space-y-8 items-center justify-center flex-col flex">
+                <img class="cursor-pointer" src="images/linkedin.svg" alt="" />
+                <img class="cursor-pointer" src="images/facebook.svg" alt="" />
+                <img class="cursor-pointer" src="images/instagram.svg" alt="" />
+                <img class="cursor-pointer" src="images/behance.svg" alt="" />
+              </div>
+            </div>
+        
+            <div class="space-y-12">
+              <div class="space-y-6">
+                <h3 class="font-FontA font-semibold lg:text-4xl xl:text-6xl text-3xl text-darkblue">UI/UX Designer & Frontend Developer</h3>
+                <p class="font-medium xl:text-2xl text-xl text-gray w-auto max-w-[820px] xl:max-w-[1200px] font-FontB">I'm a passionate Designer and Developer hailing from Pakistan. With a profound love for coding, I find immense joy in crafting visually appealing and functional digital experiences. Let's create something remarkable together! 💻📱🚀</p>
+              </div>
+        
+              <div class="flex-wrap inline-flex gap-12 max-w-2xl font-medium">
+        
+                <div class="space-y-4">
+                  <p>Figma</p>
+                  <img src="images/1.svg" alt="" />
+                </div>
+        
+                <div class="space-y-4">
+                  <p>Photoshop</p>
+                  <img src="images/2.svg" alt="" />
+                </div>
+        
+                <div class="space-y-4">
+                  <p>Adobe XD</p>
+                  <img src="images/3.svg" alt="" />
+                </div>
+        
+                <div class="space-y-4">
+                  <p>VS Code</p>
+                  <img src="images/4.svg" alt="" />
+                </div>
+        
+                <div class="space-y-4">
+                  <p>GitHub</p>
+                  <img src="images/5.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- My Services - Section -->
+          <div class="font-FontA">
+            <div class="bg-[#cedaf5b7] px-5 py-24 items-center justify-center gap-28 flex flex-col">
+              <h4 class="text-4xl font-FontA font-semibold xs:text-center md:text-left text-darkblue">
+                My <span class="text-liteblue underline">Services</span>
+              </h4>
+              <div class="items-center inline-flex justify-center gap-8 flex-wrap">
+
+
+                  <!-- /* ServiceCard1 */ -->
+                  <div class="rounded bg-[#f9f9f9] items-center flex-col justify-center inline-block xs:px-3 xs:py-8 md:px-10 md:py-12">
+                    <div class="items-center gap-4 justify-center flex flex-col">
+                      <img class="h-14" src="images/WebDesigning.png" alt="" />
+                      <h3 class="text-center font-semibold text-xl">Web Designing</h3>
+                      <p class="text-center w-56 h-1 bg-liteblue"></p>
+                    </div>
+                
+                    <p class="text-xs font-FontB pt-8 font-medium w-auto max-w-xs text-gray text-center">We excel in web design. Our team crafts visually captivating and user-friendly websites that drive results. Whether you're a startup, small business, or large corporation, we tailor our services to your unique needs. We focus on aesthetics, functionality, and user experience to help you make a lasting impact in the digital world.</p>
+                  </div>
+
+
+                  <!-- /* ServiceCard2 */ -->
+                  <div class="rounded bg-[#f9f9f9] items-center flex-col justify-center inline-block xs:px-3 xs:py-8 md:px-10 md:py-12">
+                    <div class="items-center gap-4 justify-center flex flex-col">
+                      <img class="h-14" src="images/UIUXDesigning.png" alt="" />
+                      <h3 class="text-center font-semibold text-xl">UI/UX Designing
+                    </h3>
+                      <p class="text-center w-56 h-1 bg-liteblue"></p>
+                    </div>
+                
+                    <p class="text-xs font-FontB pt-8 font-medium w-auto max-w-xs text-gray text-center">We excel in web design. Our team crafts visually captivating and user-friendly websites that drive results. Whether you're a startup, small business, or large corporation, we tailor our services to your unique needs. We focus on aesthetics, functionality, and user experience to help you make a lasting impact in the digital world.</p>
+                  </div>
+
+                
+                <!-- /* ServiceCard3 */ -->
+                <div class="rounded bg-[#f9f9f9] items-center flex-col justify-center inline-block xs:px-3 xs:py-8 md:px-10 md:py-12">
+                    <div class="items-center gap-4 justify-center flex flex-col">
+                      <img class="h-14" src="images/WebDevelopment.png" alt="" />
+                      <h3 class="text-center font-semibold text-xl">Web Development
+                    </h3>
+                      <p class="text-center w-56 h-1 bg-liteblue"></p>
+                    </div>
+                
+                    <p class="text-xs font-FontB pt-8 font-medium w-auto max-w-xs text-gray text-center">We excel in web design. Our team crafts visually captivating and user-friendly websites that drive results. Whether you're a startup, small business, or large corporation, we tailor our services to your unique needs. We focus on aesthetics, functionality, and user experience to help you make a lasting impact in the digital world.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+
+
+          <!-- My Experience - Section -->
+          <div class="font-FontA flex-wrap xs:px-4 md:px-24 xs:gap-12 lg:gap-16 py-32 flex items-center justify-between md:gap-28">
+            <div class="inline-flex items-center flex-wrap content-center xs:gap-24 md:gap-56">
+        
+              <!-- Left Side -->
+              <div class="xs:w-12">
+                <img src="images/MyExperience.svg" alt="" />
+              </div>
+        
+              <!-- Right Side -->
+              <div class="flex flex-col xs:px-2 gap-10">
+                <div class="space-y-4">
+        
+                  <!-- Experience 1 -->
+                  <div class="inline-flex items-center gap-8">
+                    <div>
+                      <img src="images/circle.svg" alt="" />
+                    </div>
+                    <div class="">
+                      <p class="font-medium md:w-auto xs:w-[290px] md:text-xl xs:w-xl">
+                        Junior UI/UX Designer at Framing Ideas - Design Solutions USA (Remote)
+                      </p>
+                      <p class="font-FontC font-medium text-sm text-gray">
+                        01 December 2023 - Present
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-gray h-14 w-0.5 ml-2"></div>
+        
+                  <!-- Experience 2 -->
+                  <div class="inline-flex items-center gap-8">
+                    <div>
+                      <img src="images/circle.svg" alt="" />
+                    </div>
+                    <div>
+                      <p class="font-medium md:w-auto xs:w-[300px] xs:text-lg text-xl">
+                        UI/UX Designer - Internee at Framing Ideas - Design Solutions USA (Remote)
+                      </p>
+                      <p class="font-FontC font-medium text-sm text-gray">
+                        01 November 2023 - 30 November 2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-gray h-14 w-0.5 ml-2"></div>
+        
+                   <!-- Experience 3 -->
+                   <div class="inline-flex items-center gap-8">
+                    <div>
+                      <img src="images/circle.svg" alt="" />
+                    </div>
+                    <div>
+                      <p class="font-medium md:w-auto xs:w-[300px] xs:text-lg text-xl">
+                        UI/UX Designer & Frontend Developer on Fiverr
+                      </p>
+                      <p class="font-FontC font-medium text-sm text-gray">
+                        1 January 2023 - Present
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-gray h-14 w-0.5 ml-2"></div>
+
+
+                  <!-- Experience 4 -->
+                  <div class="inline-flex items-center gap-8">
+                    <div>
+                      <img src="images/circle.svg" alt="" />
+                    </div>
+                    <div>
+                      <p class="font-medium md:w-auto xs:w-[300px] xs:text-lg text-xl">
+                        UI/UX Design Intern ar Indus Technetronix Pvt Ltd Hyd
+                      </p>
+                      <p class="font-FontC font-medium text-sm text-gray">
+                        02 July 2023 - 30 August 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="xs:w-80 md:w-96 h-[1.4px] opacity-30 bg-gray"></div>
+        
+                <!-- Skills Count -->
+                <div class="flex flex-start xs:gap-10 md:gap-20">
+                  <div>
+                    <p class="font-semibold text-lg">30 +</p>
+                    <p class="font-FontB text-sm text-semibold text-gray">
+                      Web Designs
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">15 +</p>
+                    <p class="font-FontB text-sm text-semibold text-gray">
+                      Landing Pages
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg">5 +</p>
+                    <p class="font-FontB text-sm text-semibold text-gray">
+                      Website Coded
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
